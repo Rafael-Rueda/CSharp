@@ -1,7 +1,0 @@
-C:\Users\Administrador\source\repos\arqsoftware\editora\bin\Debug\editora.exe.config
-C:\Users\Administrador\source\repos\arqsoftware\editora\bin\Debug\editora.exe
-C:\Users\Administrador\source\repos\arqsoftware\editora\bin\Debug\editora.pdb
-C:\Users\Administrador\source\repos\arqsoftware\editora\obj\Debug\editora.csproj.AssemblyReference.cache
-C:\Users\Administrador\source\repos\arqsoftware\editora\obj\Debug\editora.csproj.CoreCompileInputs.cache
-C:\Users\Administrador\source\repos\arqsoftware\editora\obj\Debug\editora.exe
-C:\Users\Administrador\source\repos\arqsoftware\editora\obj\Debug\editora.pdb
