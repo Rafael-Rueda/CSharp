@@ -1,22 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
-namespace editora
+namespace editora.Controllers
 {
-    internal class Livro : Registravel
+    internal class LivroController
     {
-        public int id;
-        public string nome;
-        public int anopublicacao;
-        public float isbn;
-        public string observacoes;
-
-        public Livro()
+        public static void Criar()
         {
+            Livro livroCriar = new Livro();
             int idCriar = 0;
 
             while (true)
@@ -28,60 +23,24 @@ namespace editora
             }
 
 
-            this.id = idCriar;
+            livroCriar.id = idCriar;
             Console.WriteLine("Nome: ");
-            this.nome = Console.ReadLine();
+            livroCriar.nome = Console.ReadLine();
             Console.WriteLine("Ano de publicação: ");
-            this.anopublicacao = int.Parse(Console.ReadLine());
+            livroCriar.anopublicacao = int.Parse(Console.ReadLine());
             Console.WriteLine("ISBN: ");
-            this.isbn = float.Parse(Console.ReadLine());
+            livroCriar.isbn = float.Parse(Console.ReadLine());
             Console.WriteLine("Observações: ");
-            this.observacoes = Console.ReadLine();
+            livroCriar.observacoes = Console.ReadLine();
 
             Console.WriteLine("Livro adiciona com sucesso.");
 
             Console.WriteLine("Pressione Enter para continuar.");
             Console.ReadLine();
 
-            Gerenciador<Livro>.AdicionarInstancia(this);
+            Gerenciador<Livro>.AdicionarInstancia(livroCriar);
         }
 
-        private Livro(int id, string nome, int anopublicacao, float isbn, string observacoes)
-        {
-            if (Gerenciador<Livro>.GetInstancias().Any(e => e.id == id)) throw new Exception("Nao pode com o mesmo ID");
-
-            this.id = id;
-            this.nome = nome;
-            this.anopublicacao = anopublicacao;
-            this.isbn = isbn;
-            this.observacoes = observacoes;
-        }
-
-        private static string WriteLivro(Livro livro)
-        {
-            return livro.id.ToString() + " - " + livro.nome.ToString() + " - " + livro.anopublicacao.ToString() + " - " + livro.isbn.ToString();
-        }
-
-        public static List<Livro> GetLivros()
-        {
-            return Gerenciador<Livro>.GetInstancias();
-        }
-
-        public static void Sincronizar(string caminhoCsv)
-        {
-            Gerenciador<Livro>.LimparInstancias();
-
-            string[] linhas = File.ReadAllLines(caminhoCsv);
-
-            foreach (string linha in linhas)
-            {
-                string[] colunas = linha.Split(';');
-
-                Livro livro = new Livro(id: int.Parse(colunas[0]), nome: colunas[1], anopublicacao: int.Parse(colunas[2]), isbn: float.Parse(colunas[3]), observacoes: colunas[4]);
-
-                Gerenciador<Livro>.AdicionarInstancia(livro);
-            }
-        }
         public static void Pesquisar()
         {
             foreach (Livro livro in Gerenciador<Livro>.GetInstancias())
@@ -145,6 +104,43 @@ namespace editora
 
             Console.WriteLine("Pressione Enter para continuar.");
             Console.ReadLine();
+        }
+
+        public static void Sincronizar()
+        {
+            Gerenciador<Livro>.LimparInstancias();
+
+            string[] linhas = File.ReadAllLines(Livro.caminho);
+
+            foreach (string linha in linhas)
+            {
+                Livro livro = new Livro();
+                string[] colunas = linha.Split(';');
+
+                if (Gerenciador<Livro>.GetInstancias().Any(e => e.id == int.Parse(colunas[0])))
+                {
+                    Console.WriteLine("[!] O livro de nome: " + colunas[1] + "Não foi carregado com êxito pois contém ID duplicado.");
+                    continue;
+                }
+
+                livro.id = int.Parse(colunas[0]);
+                livro.nome = colunas[1];
+                livro.anopublicacao = int.Parse(colunas[2]);
+                livro.isbn = float.Parse(colunas[3]);
+                livro.observacoes = colunas[4];
+
+                Gerenciador<Livro>.AdicionarInstancia(livro);
+            }
+        }
+
+        private static string WriteLivro(Livro livro)
+        {
+            return livro.id.ToString() + " - " + livro.nome.ToString() + " - " + livro.anopublicacao.ToString() + " - " + livro.isbn.ToString();
+        }
+
+        public static List<Livro> GetLivros()
+        {
+            return Gerenciador<Livro>.GetInstancias();
         }
     }
 }

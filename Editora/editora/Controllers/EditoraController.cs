@@ -5,17 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace editora {
-    internal class Editora : Registravel
+namespace editora.Controllers
+{
+    internal class EditoraController
     {
-        public int id;
-        public string nome;
-        public string sigla;
-        public string observacoes;
-
-        public Editora()
+        public static void Criar()
         {
             int idCriar = 0;
+            Editora editoraCriar = new Editora();
 
             while (true)
             {
@@ -26,57 +23,25 @@ namespace editora {
             }
 
 
-            this.id = idCriar;
+            editoraCriar.id = idCriar;
             Console.WriteLine("Nome: ");
-            this.nome = Console.ReadLine();
+            editoraCriar.nome = Console.ReadLine();
             Console.WriteLine("Sigla: ");
-            this.sigla = Console.ReadLine();
+            editoraCriar.sigla = Console.ReadLine();
             Console.WriteLine("Observações: ");
-            this.observacoes = Console.ReadLine();
+            editoraCriar.observacoes = Console.ReadLine();
 
             Console.WriteLine("Editora adiciona com sucesso.");
 
             Console.WriteLine("Pressione Enter para continuar.");
             Console.ReadLine();
 
-            Gerenciador<Editora>.AdicionarInstancia(this);
+            Gerenciador<Editora>.AdicionarInstancia(editoraCriar);
+
+
+            Console.WriteLine("Editora adicionada com sucesso!");
         }
 
-        private Editora(int id, string nome, string sigla, string observacoes)
-        {
-            if (Gerenciador<Editora>.GetInstancias().Any(e => e.id == id)) throw new Exception("Nao pode com o mesmo ID");
-
-            this.id = id;
-            this.nome = nome;
-            this.sigla = sigla;
-            this.observacoes = observacoes;
-        }
-
-        private static string WriteEditora(Editora editora)
-        {
-            return editora.id.ToString() + " - " + editora.sigla.ToString() + " - " + editora.nome.ToString();
-        }
-
-        public static List<Editora> GetEditoras()
-        {
-            return Gerenciador<Editora>.GetInstancias();
-        }
-
-        public static void Sincronizar(string caminhoCsv)
-        {
-            Gerenciador<Editora>.LimparInstancias();
-
-            string[] linhas = File.ReadAllLines(caminhoCsv);
-
-            foreach (string linha in linhas)
-            {
-                string[] colunas = linha.Split(';');
-
-                Editora editora = new Editora(id: int.Parse(colunas[0]), nome: colunas[1], sigla: colunas[2], observacoes: colunas[3]);
-
-                Gerenciador<Editora>.AdicionarInstancia(editora);
-            }
-        }
         public static void Pesquisar()
         {
             foreach (Editora editora in Gerenciador<Editora>.GetInstancias())
@@ -107,13 +72,14 @@ namespace editora {
                 Gerenciador<Editora>.SobrescreverInstancias(editoras);
 
                 Console.WriteLine("Atualizado com sucesso.");
-            } else
+            }
+            else
             {
                 Console.WriteLine("Editora não encontrada.");
             }
 
             Console.WriteLine("Pressione Enter para continuar.");
-            Console.ReadLine();           
+            Console.ReadLine();
         }
 
         public static void Excluir()
@@ -137,6 +103,42 @@ namespace editora {
 
             Console.WriteLine("Pressione Enter para continuar.");
             Console.ReadLine();
+        }
+
+        public static void Sincronizar()
+        {
+            Gerenciador<Editora>.LimparInstancias();
+
+            string[] linhas = File.ReadAllLines(Editora.caminho);
+
+            foreach (string linha in linhas)
+            {
+                string[] colunas = linha.Split(';');
+
+                Editora editora = new Editora();
+
+                if (Gerenciador<Editora>.GetInstancias().Any(e => e.id == int.Parse(colunas[0]))) 
+                { 
+                    Console.WriteLine("[!] A editora de nome: " + colunas[1] + "Não foi carregada com êxito pois contém ID duplicado."); 
+                    continue; 
+                }
+                editora.id = int.Parse(colunas[0]);
+                editora.nome = colunas[1];
+                editora.sigla = colunas[2];
+                editora.observacoes = colunas[3];
+
+                Gerenciador<Editora>.AdicionarInstancia(editora);
+            }
+        }
+
+        public static List<Editora> GetEditoras()
+        {
+            return Gerenciador<Editora>.GetInstancias();
+        }
+
+        private static string WriteEditora(Editora editora)
+        {
+            return editora.id.ToString() + " - " + editora.sigla.ToString() + " - " + editora.nome.ToString();
         }
     }
 }

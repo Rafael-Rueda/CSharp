@@ -1,34 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\",
+  "WorkspaceRootPath": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\Editora\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|c:\\users\\rafae\\onedrive\\documentos\\_programa\u00E7\u00E3o\\_github\\csharp\\arqsoftware-25-10\\editora\\registravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|solutionrelative:editora\\registravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\editora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|solutionrelative:editora\\editora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\gerenciador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|solutionrelative:editora\\gerenciador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|c:\\users\\rafae\\onedrive\\documentos\\_programa\u00E7\u00E3o\\_github\\csharp\\editora\\editora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|solutionrelative:editora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|solutionrelative:editora\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|solutionrelative:editora\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6AB23721-A466-4FC9-B4E9-FD32998213C6}|editora\\editora_p1.csproj|solutionrelative:editora\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,92 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 894,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Editora.cs",
-              "DocumentMoniker": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Editora.cs",
-              "RelativeDocumentMoniker": "editora\\Editora.cs",
-              "ToolTip": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Editora.cs",
-              "RelativeToolTip": "editora\\Editora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T23:07:17.872Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Registravel.cs",
-              "DocumentMoniker": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Registravel.cs",
-              "RelativeDocumentMoniker": "editora\\Registravel.cs",
-              "ToolTip": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Registravel.cs",
-              "RelativeToolTip": "editora\\Registravel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:06:13.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Gerenciador.cs",
-              "DocumentMoniker": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Gerenciador.cs",
-              "RelativeDocumentMoniker": "editora\\Gerenciador.cs",
-              "ToolTip": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Gerenciador.cs",
-              "RelativeToolTip": "editora\\Gerenciador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T02:13:33.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\Editora\\editora\\Program.cs",
               "RelativeDocumentMoniker": "editora\\Program.cs",
-              "ToolTip": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Program.cs",
+              "ToolTip": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\Editora\\editora\\Program.cs",
               "RelativeToolTip": "editora\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAACwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T01:37:22.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Autor.cs",
-              "DocumentMoniker": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Autor.cs",
-              "RelativeDocumentMoniker": "editora\\Autor.cs",
-              "ToolTip": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Autor.cs",
-              "RelativeToolTip": "editora\\Autor.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAuwIgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T22:40:03.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Livro.cs",
-              "DocumentMoniker": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Livro.cs",
-              "RelativeDocumentMoniker": "editora\\Livro.cs",
-              "ToolTip": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\Livro.cs",
-              "RelativeToolTip": "editora\\Livro.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAA9wFAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T22:44:13.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\App.config",
-              "RelativeDocumentMoniker": "editora\\App.config",
-              "ToolTip": "C:\\Users\\rafae\\OneDrive\\Documentos\\_Programa\u00E7\u00E3o\\_GitHub\\CSharp\\arqsoftware-25-10\\editora\\App.config",
-              "RelativeToolTip": "editora\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-25T22:08:28.9Z"
+              "WhenOpened": "2024-11-06T20:16:22.032Z",
+              "EditorCaption": ""
             }
           ]
         }
